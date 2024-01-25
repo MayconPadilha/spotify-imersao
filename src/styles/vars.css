@@ -6,6 +6,8 @@
 
   --bg-icon: #131313;
   --bg-top-bar: #61616142;
+  --bg-arrow-color: rgba(0, 0, 0, 0.7);
+  --bg-search: #242424;
   --grid-gap: 24px;
   --column-count: 5;
 

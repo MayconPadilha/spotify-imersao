@@ -1,10 +1,15 @@
+body{
+    background-color: #000;
+    font-family: var(--font-dm-sans);
+}
+
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: 300px;
     background-color: #000000;
-    padding: 12px;
+    padding: 8px;
 }
 
 .sidebar .logo {
@@ -63,6 +68,7 @@
     font-size: 14px;
     margin-top: 10px;
     flex-direction: column;
+    line-height: 1.5;
 }
 
 .library .library__button {
@@ -72,7 +78,6 @@
     border: 0px;
     font-size: 1rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -106,7 +111,7 @@
     min-block-size: 40px;
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     margin: 8px 0;
     padding: 16px 20px;
 }
@@ -114,6 +119,7 @@
 .section-playlist .section-playlist__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .section-playlist__content .text {
@@ -127,7 +133,8 @@
 
 .section-playlist__content .subtitle {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
  }
 
  .section-playlist__content .section-playlist__button {
@@ -137,14 +144,18 @@
     display: flex;
     font-size: 0.8rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: none;
-    padding: 10px;
+    padding: 9px 16px;
     border: 0px;
-    width: 113px;
+    /* width: 113px; */
     justify-content: center;
     margin-top: 12px;
+    white-space: nowrap;
+}
+
+.section-playlist__content .section-playlist__button:hover{
+    transform: scale(1.04);
 }
 
 .sidebar .cookies {
@@ -181,37 +192,43 @@
     left: 0;
     right: 0;
     background: linear-gradient(to right, #ae2896, #509bf5);
-    padding: 15px 40px;
+    padding: 11px 24px 7px 15px;
     display: flex;
     justify-content: space-between;
+    color: #fff;
+    margin: 8px;
 }
 .disclaimer-premium .text {
    flex-shrink: 0;
 }
 .disclaimer-premium .disclaimer-premium__title {
     color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
 .disclaimer-premium .disclaimer-premium__subtitle {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    max-width: 70vw;
 }
 
 .disclaimer-premium button {
     background-color: #ffffff;
     color: #000000;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     padding: 14px 30px;
     border: 0px;
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+.disclaimer-premium button:hover{
+    transform: scale(1.04);
 }
 
 #artistList {

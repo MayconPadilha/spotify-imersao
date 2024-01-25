@@ -3,7 +3,7 @@
   max-width: 80vw;
   height: 100vh;
   margin-left: 320px;
-  margin-right: 56px;
+  /* margin-right: 56px; */
 }
 
 /* DISPLAY * TOTAL e vamos passar rapidamente por cada um deles
@@ -47,7 +47,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .header__navigation .navigation .arrow-left {
-  margin-right: 1.25rem;
+  margin-right: 0.8rem;
 }
 
 .arrow-left,
@@ -58,7 +58,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   width: 32px;
   height: 32px;
   background: var(--bg-icon);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bg-arrow-color);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -72,10 +72,10 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 .header__search {
   display: flex;
   align-items: center;
-  width: 364px;
+  width: 430px;
   height: 48px;
   margin-left: 8px;
-  background-color: #242424;
+  background-color: var(--bg-search);
   border-radius: 500px;
   border: 1px solid transparent;
 }
@@ -129,6 +129,11 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 .header__login .login:hover {
   transform: scale(1.04);
 }
+
+/* .header__navigation .navigation .header__login{
+  right: 0;
+} */
+
 /* FIM HOVER */
 
 /*FIM HEADER */
