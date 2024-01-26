@@ -4,12 +4,10 @@ body{
 }
 
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 300px;
+    grid-area: sidebar;
     background-color: #000000;
-    padding: 8px;
+    margin: 10px 0px 0px 10px;
+    height: 100%;
 }
 
 .sidebar .logo {
@@ -56,12 +54,14 @@ body{
     color: #ffffff;
 }
 
+.area-sidebar{
+    overflow-y: auto;
+}
+
 .library {
     background-color: #121212;
     border-radius: 8px;
     display: flex;
-    justify-content: space-between;
-    min-block-size: 40px;
     padding: 4px 8px;
     color: #b3b3b3;
     font-weight: 600;
@@ -85,6 +85,11 @@ body{
     display: flex;
 }
 
+.library .library__button:hover{
+    color: #fff;
+}
+
+
 .library .library__button .fa {
     font-size: 20px;
     margin-right: 10px;
@@ -95,10 +100,18 @@ body{
 .library__content {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .library .library__content .fa-plus {
    margin: 24px 10px;
+}
+
+.div-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
 }
 
 .section-playlist {
@@ -148,7 +161,6 @@ body{
     text-transform: none;
     padding: 9px 16px;
     border: 0px;
-    /* width: 113px; */
     justify-content: center;
     margin-top: 12px;
     white-space: nowrap;
@@ -187,10 +199,7 @@ body{
 }
 
 .disclaimer-premium {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    grid-area: footer;
     background: linear-gradient(to right, #ae2896, #509bf5);
     padding: 11px 24px 7px 15px;
     display: flex;
